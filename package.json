@@ -1,0 +1,33 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "Demo 30/8",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuyThinh1415/Nodejs_demo1.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "ndt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuyThinh1415/Nodejs_demo1/issues"
+  },
+  "homepage": "https://github.com/DuyThinh1415/Nodejs_demo1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "mongoose": "^6.0.5"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}

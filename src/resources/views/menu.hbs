@@ -1,0 +1,132 @@
+<div class="row">
+    <aside class="col-md-2 col-sm-12 option">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Rice</a></li>
+            <li><a href="#">Soup</a></li>
+            <li><a href="#">Fast food</a></li>
+            <li><a href="#">Drink</a></li>
+        </ul>
+        <h2>Combo</h2>
+        <ul>
+            <li><a href="#">Combo one person</a></li>
+            <li><a href="#">combo two people</a></li>
+            <li><a href="#">Combo family</a></li>
+            <li><a href="#">Combo for event</a></li>
+        </ul>
+    </aside>
+    <div class="col-md-7 col-sm-12">
+        <div class="row ">
+            {{#each foods}}
+            <div class="card col-sm-4 col-5">
+                <img class="card-img-top picture" src="{{this.image}}" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <p class="card-text">{{this.name}}</p>
+                    <p class="card-text">Price: {{this.price}}$ <span>&#36;</span></p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+        <div class="container page">
+            <ul class="pagination justify-content-end">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--cart-->
+    <div class="col-md-3 col-sm-12 cart">
+        <!--Anh quang cao (neu co)-->
+        <div class="title">
+            <div class="row">
+                <div class="col">
+                    <h4><b>Shopping Cart</b></h4>
+                </div>
+            </div>
+            <hr />
+        </div>
+
+        <div class="cart-items">
+
+
+            <div class="cart-row">
+                <div class="row main align-items-center">
+                    <div class="col-2">
+                        <img class="img-fluid" src="img/comtron.jpg" />
+                    </div>
+                    <div class="col">
+                        <div class="row text-muted">Cơm</div>
+                        <div class="row">Cơm Trộn</div>
+                    </div>
+                    <div class="cart-price col">
+                        69000 <span class="close">&#10005;</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="separate" />
+
+
+            <div class="cart-row">
+                <div class="row main align-items-center">
+                    <div class="col-2">
+                        <img class="img-fluid" src="img/cake.jpg" />
+                    </div>
+                    <div class="col">
+                        <div class="row text-muted">Bánh</div>
+                        <div class="row">Cake</div>
+                    </div>
+                    <div class="cart-price col">
+                        69000 <span class="close">&#10005;</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="separate" />
+
+            <div class="cart-row">
+                <div class="row main align-items-center">
+                    <div class="col-2">
+                        <img class="img-fluid" src="img/hamberger.jpg" />
+                    </div>
+                    <div class="col">
+                        <div class="row text-muted">Fast food</div>
+                        <div class="row">Hamberger</div>
+                    </div>
+                    <div class="cart-price col">
+                        29000 <span class="close">&#10005;</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="separate" />
+
+            <div class="cart-row">
+                <div class="row main align-items-center">
+                    <div class="col-2">
+                        <img class="img-fluid" src="img/sinhto.jpg" />
+                    </div>
+                    <div class="col cart-name-food">
+                        <div class="row text-muted">Drink</div>
+                        <div class="row">Sinh tố</div>
+                    </div>
+                    <div class="cart-price col">
+                        99000 <span class="close">&#10005;</span>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="separate" />
+
+            <p class="total_price">TOTAL PRICE:</p>
+            <div class="price">266000 </div>
+
+            <button type="button" class="btn col btn-success">CHECKOUT</button>
+
+
+        </div>
+
+    </div>
+</div>
